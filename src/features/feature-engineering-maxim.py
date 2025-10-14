@@ -32,4 +32,3 @@ def get_features(data: pd.DataFrame, idcol: str = "id", encode_cyclical: bool = 
         df.drop(columns=cyclical_features, inplace=True)
 
     return df.sort_values(by=idcol, ascending=True)
-
