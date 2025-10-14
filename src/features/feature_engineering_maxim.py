@@ -6,7 +6,7 @@ def cyclical_encoding(col):
 
     if not isinstance(col, pd.Series):
         raise TypeError("Input must be a pandas Series")
-
+    
     max_val = col.max()
     scaled = (col * 2 * np.pi) / max_val
 
